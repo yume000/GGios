@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A87AD2D71CD4590600D7AB2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87AD2D61CD4590600D7AB2E /* AppDelegate.swift */; };
 		A87AD2D91CD4590600D7AB2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87AD2D81CD4590600D7AB2E /* ViewController.swift */; };
 		A87AD2DC1CD4590600D7AB2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A87AD2DA1CD4590600D7AB2E /* Main.storyboard */; };
 		A87AD2DE1CD4590600D7AB2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A87AD2DD1CD4590600D7AB2E /* Assets.xcassets */; };
 		A87AD2E11CD4590600D7AB2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A87AD2DF1CD4590600D7AB2E /* LaunchScreen.storyboard */; };
+		A87AD2E91CD4AA0F00D7AB2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87AD2E81CD4AA0F00D7AB2E /* AppDelegate.swift */; };
+		A87AD2EB1CD4AB0500D7AB2E /* youthink.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A87AD2EA1CD4AB0500D7AB2E /* youthink.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A87AD2D31CD4590600D7AB2E /* testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testing.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A87AD2D61CD4590600D7AB2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A87AD2D81CD4590600D7AB2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A87AD2DB1CD4590600D7AB2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A87AD2DD1CD4590600D7AB2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A87AD2E01CD4590600D7AB2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A87AD2E21CD4590600D7AB2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A87AD2E81CD4AA0F00D7AB2E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A87AD2EA1CD4AB0500D7AB2E /* youthink.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = youthink.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,8 @@
 		A87AD2D51CD4590600D7AB2E /* testing */ = {
 			isa = PBXGroup;
 			children = (
-				A87AD2D61CD4590600D7AB2E /* AppDelegate.swift */,
+				A87AD2EA1CD4AB0500D7AB2E /* youthink.mp3 */,
+				A87AD2E81CD4AA0F00D7AB2E /* AppDelegate.swift */,
 				A87AD2D81CD4590600D7AB2E /* ViewController.swift */,
 				A87AD2DA1CD4590600D7AB2E /* Main.storyboard */,
 				A87AD2DD1CD4590600D7AB2E /* Assets.xcassets */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					A87AD2D21CD4590600D7AB2E = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8Z7UW999P9;
 					};
 				};
 			};
@@ -123,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A87AD2E11CD4590600D7AB2E /* LaunchScreen.storyboard in Resources */,
+				A87AD2EB1CD4AB0500D7AB2E /* youthink.mp3 in Resources */,
 				A87AD2DE1CD4590600D7AB2E /* Assets.xcassets in Resources */,
 				A87AD2DC1CD4590600D7AB2E /* Main.storyboard in Resources */,
 			);
@@ -135,8 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A87AD2E91CD4AA0F00D7AB2E /* AppDelegate.swift in Sources */,
 				A87AD2D91CD4590600D7AB2E /* ViewController.swift in Sources */,
-				A87AD2D71CD4590600D7AB2E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +256,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = testing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yume.testing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -262,7 +269,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = testing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yume.testing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
